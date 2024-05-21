@@ -13,7 +13,7 @@ import settings from '../img/settings.svg';
 
 export default function () {
   const markup = `
-  <div class="row">
+  <div class="row p-4">
   <div class="col-lg-9 p-0">
     <div class="p-4 col-lg-12 bg-white" style="display: inline-block">
       <img
@@ -200,8 +200,6 @@ export default function () {
       </div>
     </div>
   </div>
-</div>
-  
-  `;
+</div>`;
   document.querySelector('#app').innerHTML = markup;
 }

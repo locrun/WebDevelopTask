@@ -27,6 +27,15 @@ module.exports = {
     assetModuleFilename: 'assets/[hash][ext]'
   },
 
+  externalsType: 'script',
+  externals: {
+    ymaps3: [
+      'https://api-maps.yandex.ru/v3/?apikey=ec8bbc2e-4b6d-4dd2-866f-1be3c745869c&lang=ru_RU',
+      'ymaps3'
+    ]
+  },
+  devtool: 'cheap-source-map',
+
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),

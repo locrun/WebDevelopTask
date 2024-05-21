@@ -1,7 +1,7 @@
 import errorPage from './pages/errorPage';
-import userPage from './pages/UserPage';
-import timePage from './pages/TimePage';
-import mapPage from './pages/MapPage';
+import userPage from './pages/userPage';
+import timePage from './pages/timePage';
+import mapPage from './pages/mapPage';
 
 const routes = [
   { path: '/', component: userPage },
