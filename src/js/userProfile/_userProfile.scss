@@ -94,18 +94,6 @@
   }
 }
 
-.accordion-button {
-  outline: none !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-
-  &:focus {
-    border: none !important;
-    box-shadow: none !important;
-  }
-}
-
 .time {
   position: absolute;
   right: 8%;
@@ -130,6 +118,79 @@
 .accordionMessageBody {
   padding: 16px;
   border-top: 1px solid #d3d8de;
+}
+
+.nav-link {
+  .iconWrapper {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.customBorder {
+  margin: 10px 0;
+  border-top: 1px solid #d3d8de;
+}
+.accordionBodyNav {
+  padding: 8px 0;
+  border-top: 1px solid #d3d8de;
+
+  .navLink {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .linkText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #505050;
+  }
+}
+
+.balance {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #8f8f8f;
+}
+.conncetedEntities {
+  width: 24px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 5px 0px 5px;
+  border-radius: 8px;
+  color: white;
+  background-color: #e33939;
+  font-family: VTB Group UI;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.events {
+  //padding-top: 10px !important;
+}
+.eventsEntities {
+  width: 24px;
+  height: 16px;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: white;
+  background-color: #47b091;
+  font-family: VTB Group UI;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }
 .textarea {
   min-height: 88px !important;

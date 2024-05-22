@@ -185,32 +185,58 @@ function renderNavigation() {
             class="accordion-collapse collapse"
             data-bs-parent="#accordionFlushExample"
           >
-            <div class="accordion-body">
-              <a class="nav-link" href="#">
-                <img src='${profile}' alt="profile" />
-                My profile
+            <div class="accordion-body accordionBodyNav">
+                <a class="nav-link d-flex align-items-center" href="#">
+                  <div class="iconWrapper">
+                    <img src='${profile}' alt="profile" />
+                  </div>
+                  <span class="linkText">My profile</span>
+                </a>
+              <a class="nav-link d-flex align-items-center justify-content-between" href="#">
+                <div class="d-flex align-items-center">
+                  <div class="iconWrapper">
+                    <img src='${balance}' alt="balance" />
+                  </div>
+                  <span class="linkText">
+                    Balance
+                  </span>
+                </div>
+                <span class="balance">$ 1,430</span>
               </a>
-              <a class="nav-link" href="#">
-                <img src='${balance}' alt="balance" />
-                Balance
-                <span>$ 1,430</span>
+              <a class="nav-link navLink" href="#">
+                <div class="d-flex align-items-center">
+                <div class="iconWrapper">
+                  <img src='${connections}' alt="connections" />
+                </div>
+                   <span class="linkText">Connections</span>
+                </div>
+                <span class="conncetedEntities">29</span>
               </a>
-              <a class="nav-link" href="#">
-                <img src='${connections}' alt="connections" />
-                Connections
-                <span>29</span>
+              <a class="nav-link navLink friends" href="#">
+                <span class="d-flex align-items-center">
+                  <div class="iconWrapper">
+                    <img src='${friends}' style="width:20px; height:18px" alt="friends" />
+                  </div>
+                  <span class="linkText">Friends</span>
+                </span>
               </a>
-              <a class="nav-link" href="#">
-                <img src='${friends}' alt="friends" />
-                Friends
+              <div class="customBorder"></div>
+              <a class="nav-link events navLink" style="padding-top:10px" href="#">
+                <span class="d-flex align-items-center">
+                  <div class="iconWrapper">
+                    <img src='${events}' alt="events" />
+                  </div>
+                  <span class="linkText">Events</span>
+                </span>
+                <span class="eventsEntities">45</span>
               </a>
-              <a class="nav-link" href="#">
-                <img src='${events}' alt="events" />
-                Events
-              </a>
-              <a class="nav-link" href="#">
-                <img src='${settings}' alt="settings" />
-                Account settings
+              <a class="nav-link navLink" href="#">
+                <span class="d-flex align-items-center">
+                  <div class="iconWrapper">
+                    <img src='${settings}' style="width:19px" alt="settings" />
+                  </div>
+                  <span class="linkText">Account settings</span>
+                </span>
               </a>
             </div>
           </div>

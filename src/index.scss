@@ -6,7 +6,25 @@
 .body {
   background-color: #f1f1f1;
 }
+.accordion-button {
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
 
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.form-control {
+  outline: none !important;
+  background: none !important;
+  box-shadow: none !important;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
 .inner {
   max-width: 1440px;
   padding: 0 32px;
