@@ -16,99 +16,86 @@
     <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=ec8bbc2e-4b6d-4dd2-866f-1be3c745869c&lang=ru_RU"></script> -->
     <title>Web-bee</title>
   </head>
-  <body style="background-color: #f1f1f1">
-    <div style="background: #ffffff">
-      <header style="box-shadow: 0px 1px 1px 0px #0000001a">
-        <div
-          class="d-flex align-items-center justify-content-between"
-          style="max-width: 1440px; margin: 0 auto"
-        >
-          <div class="d-flex align-items-center">
+  <body class="body">
+    <header class="header">
+      <div class="container headerContent">
+        <div class="comeBackLink">
+          <a href="#">
             <img src="img/back.svg" alt="back" />
-            <span><strong>User pages</strong> - Profile</span>
-          </div>
-          <div class="d-flex justify-content-end">
-            <a class="nav-link" href="#">
-              <img src="img/Statistics.svg" alt="Statistics" />
-              Statistics
-            </a>
-            <a class="nav-link" href="#">
-              <img src="img/invoices.svg" alt="Invoices" />
-              Invoices
-            </a>
-            <a class="nav-link" href="#">
-              <img src="img/schedule.svg" alt="Schedule" />
-              Schedule
-            </a>
-          </div>
-        </div>
-        <nav
-          class="navbar navbar-expand-lg"
-          style="box-shadow: 0px 1px 1px 0px #0000001a; background: #fafafa"
-        >
-          <div
-            class="container-fluid"
-            style="max-width: 1440px; margin: 0 auto"
+            <strong>User pages</strong> - Profile</a
           >
-            <div
-              class="flex justify-content-between collapse navbar-collapse"
-              id="navbarNavAltMarkup"
-            >
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <img src="img/activity.svg" alt="activity" />
-                  Activity
-                </a>
-                <a class="nav-link" href="#/map">
-                  <img src="img/map.svg" alt="map" />
-                  Map</a
-                >
-                <a class="nav-link" href="#/time">
-                  <img src="img/time.svg" alt="time" />
-                  Time</a
-                >
-              </div>
-              <ul class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <img src="img/notes.svg" alt="notes" />
-                  Notes
-                </a>
-                <a class="nav-link" href="#">
-                  <img src="img/friends.svg" alt="friends" />
-                  Friends
-                </a>
+        </div>
+        <div class="headerNav">
+          <a class="link" href="#">
+            <img src="img/Statistics.svg" alt="Statistics" />
+            <span class="linkText">Statistics</span>
+          </a>
+          <a class="link fz14" href="#">
+            <img src="img/invoices.svg" alt="Invoices" />
+            <span class="linkText">Invoices</span>
+          </a>
+          <a class="link fz14" href="#">
+            <img src="img/schedule.svg" alt="Schedule" />
+            <span class="linkText">Schedule</span>
+          </a>
+        </div>
+      </div>
 
-                <a class="nav-link" href="#">
-                  <img src="img/photos.svg" alt="photos" />
-                  Photos</a
-                >
-                <div class="nav-item dropdown">
-                  <div
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img src="img/settings.svg" alt="settings" />
-                  </div>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </div>
+      <nav class="navigation">
+        <div class="container navContent">
+          <div class="flex">
+            <a class="nav-link fz14 active" aria-current="page" href="#">
+              <img class="me-1" src="img/activity.svg" alt="activity" />
+              Activity
+            </a>
+            <a class="nav-link fz14" href="#/map">
+              <img class="me-1" src="img/map.svg" alt="map" />
+              Map
+            </a>
+            <a class="nav-link fz14" href="#/time">
+              <img class="me-1" src="img/time.svg" alt="time" />
+              <span>Time</span>
+            </a>
+          </div>
+          <div class="flex">
+            <a class="nav-link fz14" aria-current="page" href="#">
+              <img src="img/notes.svg" alt="notes" />
+              Notes
+            </a>
+            <a class="nav-link fz14" href="#">
+              <img src="img/friends.svg" alt="friends" />
+              Friends
+            </a>
+
+            <a class="nav-link fz14" href="#">
+              <img src="img/photos.svg" alt="photos" />
+              Photos</a
+            >
+            <div class="nav-item dropdown me-1">
+              <div
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="img/settings.svg" alt="settings" />
+              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Another action</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
               </ul>
             </div>
           </div>
-        </nav>
-      </header>
-    </div>
-    <div style="max-width: 1440px; margin: 0 auto">
+        </div>
+      </nav>
+    </header>
+    <div class="inner">
       <div id="app"></div>
     </div>
     <script

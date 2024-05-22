@@ -1,5 +1,5 @@
 import * as ymaps3 from 'ymaps3';
-import mark from '../img/mark.png';
+import mark from '../../img/mark.png';
 
 export async function createMap() {
   await ymaps3.ready;

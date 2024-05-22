@@ -1,7 +1,8 @@
 import errorPage from './pages/errorPage';
-import userPage from './pages/userPage';
+import userPage from './pages/userProfilePage';
 import timePage from './pages/timePage';
 import mapPage from './pages/mapPage';
+import './index.scss';
 
 const routes = [
   { path: '/', component: userPage },

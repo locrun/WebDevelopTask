@@ -1,0 +1,147 @@
+.wrapper {
+  margin: 32px 0 43px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.userBlogContent {
+  width: 100%;
+  max-width: 1080px;
+}
+
+#sideBar {
+  width: 100%;
+  max-width: 264px;
+  display: flex;
+  flex-direction: column;
+}
+
+#userBlog {
+  padding: 56px 32px 32px 32px;
+  margin-bottom: 32px;
+  background-color: white;
+}
+
+.commentBlock {
+  margin-top: 20px;
+  color: #505050;
+}
+.commentAuthor {
+  color: #5095ec;
+  text-decoration: none;
+}
+
+.commentText {
+  margin: 14px 0;
+  height: 65px;
+  padding-left: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  border-left: 2px solid #d3d8de;
+  overflow: auto;
+}
+.date {
+  display: block;
+  margin-top: 16px;
+  color: #8f8f8f;
+}
+
+.details {
+  display: flex;
+  gap: 30px;
+  font-size: 16px;
+  line-height: 18px;
+
+  .viewsCount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .commentCount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.accordion {
+  margin-top: 32px;
+}
+
+.profileCard {
+  padding: 35px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+  .userName {
+    margin: 16px 0 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #505050;
+  }
+
+  .speciality {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8f8f8f;
+  }
+}
+
+.accordion-button {
+  outline: none !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+
+  &:focus {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.time {
+  position: absolute;
+  right: 8%;
+  display: flex;
+  align-items: center;
+}
+.minutes {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+.accordionButtonBlog {
+  padding: 18px 32px;
+}
+.accordionbuttonMessage {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #505050;
+}
+.accordionMessageBody {
+  padding: 16px;
+  border-top: 1px solid #d3d8de;
+}
+.textarea {
+  min-height: 88px !important;
+  border-color: #d3d8de;
+}
+.saveBtn {
+  max-height: 32px;
+  background-color: #5095ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}

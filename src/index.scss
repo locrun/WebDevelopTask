@@ -1,0 +1,92 @@
+@import 'libs/normalize';
+@import 'style/var';
+@import './js/map/map';
+@import './js/userProfile/userProfile';
+
+.body {
+  background-color: #f1f1f1;
+}
+
+.inner {
+  max-width: 1440px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ffffff;
+  //box-shadow: 0px 1px 1px 0px #0000001a;
+}
+.headerNav {
+  padding: 9px 0;
+  display: flex;
+}
+
+.comeBackLink {
+  display: inline-block;
+
+  a {
+    color: #505050;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+.headerContent {
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  display: flex;
+  margin-left: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #505050;
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .linkText {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 14px;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fafafa;
+
+  .active {
+    background-color: #f1f1f1;
+  }
+
+  .fz14 {
+    font-size: 14px !important;
+  }
+}
+.nav-link {
+  padding: 8px 16px !important;
+}
+.navContent {
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
