@@ -1,14 +1,22 @@
 function navigation() {
   const listenContainer = document.querySelector('#navigation');
-  const links = document.querySelectorAll('.nav-item-link');
 
-  listenContainer.addEventListener('click', function (event) {
-    if (event.target.hasAttribute('data-nav-link')) {
+  listenContainer.addEventListener(
+    'click',
+    function (event) {
+      const target = event.target.closest('[data-nav-link]');
+      if (!target) return;
+
+      const link = target.closest('a');
+      if (!link) return;
+
+      const links = listenContainer.querySelectorAll('a[data-nav-link]');
       links.forEach(item => {
         item.classList.remove('active');
       });
-    }
-    event.target.classList.add('active');
-  });
+      link.classList.add('active');
+    },
+    true
+  );
 }
 navigation();

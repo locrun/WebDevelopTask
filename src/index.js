@@ -21,14 +21,14 @@ const routes = [
 function findComponentByPath(path, routes) {
   const links = document.querySelectorAll('.nav-item-link');
   switch (path) {
-    case 'time':
-      links[2].classList.add('active');
+    case '/':
+      links[0].classList.add('active');
       break;
     case 'map':
       links[1].classList.add('active');
       break;
-    case '/':
-      links[0].classList.add('active');
+    case 'time':
+      links[2].classList.add('active');
       break;
     default:
       break;
