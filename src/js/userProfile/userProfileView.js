@@ -138,28 +138,27 @@ function renderProfileCard() {
   const profileCard = document.querySelector('#sideBar');
 
   const markup = `   
-      <div
-        class="profileCard"
-      >
-        <img
-          src='${avatar}'
-          class="rounded-circle img-fluid"
-          style="width: 132px; height: 132px"
-          alt="Аватар"
-        />
-        <span class="userName">Hanna Dorman</span>
-        <span class="speciality">UX/UI designer</span>
-        <div class="d-fl mt-3">
-          <a>
-            <img src='${telegram}' alt="telegram" />
-          </a>
-          <a>
-            <img src='${hh}' alt="hh" />
-          </a>
-          <a>
-            <img src='${twitter}' alt="twitter" />
-          </a>
-        </div>`;
+      <div class="profileCard">
+          <img
+            src='${avatar}'
+            class="rounded-circle img-fluid"
+            style="width: 132px; height: 132px"
+            alt="Аватар" 
+            />
+              <span class="userName">Hanna Dorman</span>
+              <span class="speciality">UX/UI designer</span>
+
+             <div class="d-flex gap-2 mt-3">
+                  <a class="socialLink" href="#/telegram">
+                    <img src='${telegram}' alt="telegram" />
+                  </a>
+                  <a class="socialLink" href="#/hh">
+                    <img src='${hh}' alt="hh" />
+                  </a>
+                  <a class="socialLink" href="#/twitter">
+                    <img src='${twitter}' alt="twitter" />
+                  </a>
+             </div> `;
 
   profileCard.insertAdjacentHTML('afterbegin', markup);
 }
@@ -189,13 +188,15 @@ function renderAccordionNav() {
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body accordionBodyNav">
-                <a class="nav-link d-flex align-items-center" href="#">
+                <a class="nav-link d-flex align-items-center" href="#/profile">
                   <div class="iconWrapper">
                     <img src='${profile}' alt="profile" />
                   </div>
                   <span class="linkText">My profile</span>
                 </a>
-              <a class="nav-link d-flex align-items-center justify-content-between" href="#">
+              <a class="nav-link d-flex align-items-center justify-content-between" 
+               href="#/balance"
+              >
                 <div class="d-flex align-items-center">
                   <div class="iconWrapper">
                     <img src='${balance}' alt="balance" />
@@ -206,7 +207,7 @@ function renderAccordionNav() {
                 </div>
                 <span class="balance">$ 1,430</span>
               </a>
-              <a class="nav-link navLink" href="#">
+              <a class="nav-link navLink" href="#/connections">
                 <div class="d-flex align-items-center">
                 <div class="iconWrapper">
                   <img src='${connections}' alt="connections" />
@@ -215,7 +216,7 @@ function renderAccordionNav() {
                 </div>
                 <span class="conncetedEntities">29</span>
               </a>
-              <a class="nav-link navLink friends" href="#">
+              <a class="nav-link navLink friends" href="#/friends">
                 <span class="d-flex align-items-center">
                   <div class="iconWrapper">
                     <img src='${friends}' style="width:20px; height:18px" alt="friends" />
@@ -224,7 +225,7 @@ function renderAccordionNav() {
                 </span>
               </a>
               <div class="customBorder"></div>
-              <a class="nav-link events navLink" style="padding-top:10px" href="#">
+              <a class="nav-link events navLink" style="padding-top:10px" href="#/events">
                 <span class="d-flex align-items-center">
                   <div class="iconWrapper">
                     <img src='${events}' alt="events" />
@@ -233,7 +234,7 @@ function renderAccordionNav() {
                 </span>
                 <span class="eventsEntities">45</span>
               </a>
-              <a class="nav-link navLink" href="#">
+              <a class="nav-link navLink" href="#/settings">
                 <span class="d-flex align-items-center">
                   <div class="iconWrapper">
                     <img src='${settings}' style="width:19px" alt="settings" />

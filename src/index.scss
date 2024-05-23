@@ -35,8 +35,16 @@
 }
 .inner {
   max-width: 1440px;
-  padding: 0 32px;
+  padding: 0 15px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding: 0 22px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 32px;
+  }
 }
 
 .container {
