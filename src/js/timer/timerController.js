@@ -1,6 +1,6 @@
 import * as view from './timerView';
 
-function startTimer() {
+export function startTimer() {
   let startTime =
     parseInt(sessionStorage.getItem('startTime')) || new Date().getTime();
   const timer = document.querySelector('#timer');
@@ -23,7 +23,7 @@ function startTimer() {
   updateTime();
 }
 
-export default function (title) {
-  view.renderPage(title);
+export default function () {
+  view.renderPage({ title: 'Timer' });
   startTimer();
 }

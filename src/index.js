@@ -1,7 +1,9 @@
 import errorPage from './pages/errorPage';
 import userPage from './pages/userProfilePage';
-import timePage from './pages/timePage';
+import timerPage from './pages/timerPage';
 import mapPage from './pages/mapPage';
+import startTimer from './js/timer/timerController';
+
 import './index.scss';
 
 const routes = [
@@ -12,17 +14,35 @@ const routes = [
   },
   {
     path: 'time',
-    component: timePage
+    component: timerPage
   }
 ];
 
 function findComponentByPath(path, routes) {
+  const links = document.querySelectorAll('.nav-item-link');
+
+  switch (path) {
+    case 'time':
+      links[2].classList.add('active');
+      break;
+    case 'map':
+      links[1].classList.add('active');
+      break;
+    case '/':
+      links[0].classList.add('active');
+      break;
+    default:
+      break;
+  }
+
   return routes.find(function (route) {
     return route.path === path;
   });
 }
 
 function router() {
+  startTimer();
+
   const pathArray = location.hash.split('/');
 
   let currentPath = pathArray[0] === '' ? '/' : pathArray[1];

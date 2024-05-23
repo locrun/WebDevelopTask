@@ -295,10 +295,10 @@ function renderAccordionMessage() {
   createMessage.insertAdjacentHTML('afterend', markup);
 }
 
-export function renderPage(title) {
+export function renderPage() {
   document.querySelector('#app').innerHTML = '';
   renderContainer();
-  renderControls(title);
+  renderControls({ title: null });
   renderBlog();
   renderAccordion();
   renderProfileCard();

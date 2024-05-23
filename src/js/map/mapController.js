@@ -1,7 +1,7 @@
 import * as view from './mapView';
 import { createMap } from './mapModel';
 
-export default async function (title) {
+export default async function () {
   createMap();
-  view.renderPage(title);
+  view.renderPage({ title: 'Basic map' });
 }
