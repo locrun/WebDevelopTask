@@ -1,0 +1,1 @@
+function navigation(){const t=document.querySelector("#navigation"),a=document.querySelectorAll(".nav-item-link");t.addEventListener("click",(function(t){t.target.hasAttribute("data-nav-link")&&a.forEach((t=>{t.classList.remove("active")})),t.target.classList.add("active")}))}navigation();
