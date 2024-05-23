@@ -3,7 +3,7 @@ import userPage from './pages/userProfilePage';
 import timerPage from './pages/timerPage';
 import mapPage from './pages/mapPage';
 import startTimer from './js/timer/timerController';
-
+import './js/naviagation/navigation.js';
 import './index.scss';
 
 const routes = [
@@ -19,6 +19,21 @@ const routes = [
 ];
 
 function findComponentByPath(path, routes) {
+  const links = document.querySelectorAll('.nav-item-link');
+  switch (path) {
+    case 'time':
+      links[2].classList.add('active');
+      break;
+    case 'map':
+      links[1].classList.add('active');
+      break;
+    case '/':
+      links[0].classList.add('active');
+      break;
+    default:
+      break;
+  }
+
   return routes.find(function (route) {
     return route.path === path;
   });
