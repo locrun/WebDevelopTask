@@ -1,7 +1,12 @@
 .wrapper {
-  margin: 32px 0 43px 0;
+  margin: 0 0 43px 0;
   display: flex;
   justify-content: space-between;
+  gap: 32px;
+}
+
+.content {
+  display: flex;
   gap: 32px;
 }
 
@@ -13,13 +18,12 @@
 #sideBar {
   width: 100%;
   max-width: 264px;
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
 }
 
 #userBlog {
-  padding: 56px 32px 32px 32px;
-  margin-bottom: 32px;
   background-color: white;
 }
 
@@ -109,7 +113,7 @@
 .accordionButtonBlog {
   padding: 18px 32px;
 }
-.accordionbuttonMessage {
+.sideBarAccordionBtn {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;

@@ -1,6 +1,7 @@
-import map from '../js/map/mapContoller';
+import map from '../js/map/mapController';
 
-export default function () {
+export default async function () {
   document.querySelector('#app').innerHTML = '';
-  map();
+
+  map({ title: 'Basic map' });
 }

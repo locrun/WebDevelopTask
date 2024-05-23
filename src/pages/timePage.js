@@ -1,4 +1,9 @@
+import timer from '../js/timer/timerController';
+
 export default function () {
-  const markup = `<h1>Time page</h1>`;
-  document.querySelector('#app').innerHTML = markup;
+  timer({ title: 'Timer' });
+
+  // window.addEventListener('beforeunload', event => {
+  //   event.preventDefault();
+  // });
 }

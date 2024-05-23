@@ -1,3 +1,4 @@
+import { renderControls } from '../controls/controlsView';
 import abstractArt from '../../img/abstract-art.jpg';
 import chat from '../../img/chat.svg';
 import viewed from '../../img/viewed.svg';
@@ -17,7 +18,9 @@ function renderContainer() {
   const markup = `
     <div class="wrapper">
       <div class="userBlogContent">
-        <div id="userBlog"></div>
+        <div id="contentWrapper">
+           <div id="userBlog"></div>
+        </div>
         <div id="accordion"></div>
       </div>
       <div id="sideBar">
@@ -160,7 +163,7 @@ function renderProfileCard() {
 
   profileCard.insertAdjacentHTML('afterbegin', markup);
 }
-function renderNavigation() {
+function renderAccordionNav() {
   const navigation = document.querySelector('#nav');
   const markup = ` 
     <div
@@ -170,7 +173,7 @@ function renderNavigation() {
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button sideBarAccordionBtn collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
@@ -248,14 +251,14 @@ function renderNavigation() {
   navigation.insertAdjacentHTML('afterbegin', markup);
 }
 
-function renderMessage() {
+function renderAccordionMessage() {
   const createMessage = document.querySelector('#createMessage');
   const markup = `
     <div class="accordion accordion-flush" id="message">
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button
-              class="accordion-button accordionbuttonMessage collapsed"
+              class="accordion-button sideBarAccordionBtn collapsed"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-thoughts"
@@ -292,12 +295,13 @@ function renderMessage() {
   createMessage.insertAdjacentHTML('afterend', markup);
 }
 
-export function renderPage() {
+export function renderPage(title) {
   document.querySelector('#app').innerHTML = '';
   renderContainer();
+  renderControls(title);
   renderBlog();
   renderAccordion();
   renderProfileCard();
-  renderNavigation();
-  renderMessage();
+  renderAccordionNav();
+  renderAccordionMessage();
 }
