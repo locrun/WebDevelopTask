@@ -1,0 +1,22 @@
+.controls {
+  min-height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $asphalt-color;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+
+  span {
+    cursor: pointer;
+  }
+}
