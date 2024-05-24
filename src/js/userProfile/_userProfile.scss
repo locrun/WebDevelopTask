@@ -37,15 +37,15 @@
 }
 
 #userBlog {
-  background-color: white;
+  background-color: $white-color;
 }
 
 .commentBlock {
   margin-top: 20px;
-  color: #505050;
+  color: $asphalt-color;
 }
 .commentAuthor {
-  color: #5095ec;
+  color: $azure-lue;
   text-decoration: none;
 }
 
@@ -56,13 +56,13 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
-  border-left: 2px solid #d3d8de;
+  border-left: 2px solid $silvery-gray;
   overflow: auto;
 }
 .date {
   display: block;
   margin-top: 16px;
-  color: #8f8f8f;
+  color: $state-gray;
 }
 
 .details {
@@ -100,21 +100,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: $white-color;
 
   .userName {
     margin: 16px 0 10px 0;
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
-    color: #505050;
+    color: $asphalt-color;
   }
 
   .speciality {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    color: #8f8f8f;
+    color: $state-gray;
   }
 }
 
@@ -137,11 +137,11 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  color: #505050;
+  color: $asphalt-color;
 }
 .accordionMessageBody {
   padding: 16px;
-  border-top: 1px solid #d3d8de;
+  border-top: 1px solid $silvery-gray;
 }
 
 .nav-link {
@@ -156,11 +156,11 @@
 }
 .customBorder {
   margin: 10px 0;
-  border-top: 1px solid #d3d8de;
+  border-top: 1px solid $silvery-gray;
 }
 .accordionBodyNav {
   padding: 8px 0;
-  border-top: 1px solid #d3d8de;
+  border-top: 1px solid $silvery-gray;
 
   .navLink {
     display: flex;
@@ -172,7 +172,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
-    color: #505050;
+    color: $asphalt-color;
   }
 }
 
@@ -180,7 +180,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
-  color: #8f8f8f;
+  color: $state-gray;
 }
 .conncetedEntities {
   width: 24px;
@@ -190,17 +190,14 @@
   justify-content: center;
   padding: 0px 5px 0px 5px;
   border-radius: 8px;
-  color: white;
-  background-color: #e33939;
+  color: $white-color;
+  background-color: $brick-red;
   font-family: VTB Group UI;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
 }
 
-.events {
-  //padding-top: 10px !important;
-}
 .eventsEntities {
   width: 24px;
   height: 16px;
@@ -209,8 +206,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  color: white;
-  background-color: #47b091;
+  color: $white-color;
+  background-color: $turquoise;
   font-family: VTB Group UI;
   font-size: 12px;
   font-weight: 400;
@@ -218,11 +215,11 @@
 }
 .textarea {
   min-height: 88px !important;
-  border-color: #d3d8de;
+  border-color: $silvery-gray;
 }
 .saveBtn {
   max-height: 32px;
-  background-color: #5095ec;
+  background-color: $azure-lue;
   display: flex;
   align-items: center;
   justify-content: center;
